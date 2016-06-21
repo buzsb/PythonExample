@@ -1,6 +1,5 @@
 #Simple program that ask you age and show year that you will turn 100 years old
 
-
 from datetime import date
 def calculate_years(age):
     now = date.today().year

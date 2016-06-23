@@ -5,7 +5,7 @@ def common_elements_finding(a, b):
     c = []
     for i in a:
         if type(i) == str:
-            pass
+            continue
         if i in b:
             c.append(i)
     return c

@@ -1,12 +1,12 @@
 import random
 def guess_number():
-    number = random.randint(1, 100)
+    number = random.randint(1, 10)
     quite_word = 'i try but giving up like little bitch'
     count = 0
     guess = 0
 
     while guess != number and guess != quite_word:
-        guess = input("Guess the number between 1 and 9, or print " + quite_word + " to stop: ")
+        guess = input("Guess the number between 1 and 10, or print " + quite_word + " to stop: ")
 
         if guess == quite_word:
             print "I knew that you will give up"

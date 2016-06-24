@@ -1,14 +1,18 @@
-#Ask string and tey is you strin a  polindrome
+#Ask string and say is you strin a polindrome
+
+def revers_string(string):
+    rv_string = string[::-1]
+    return rv_string
 
 def polindrome():
     string = str(raw_input("Type you string: "))
     if len(string) == 0:
         print "you dont type enything"
     else:
-        revers_string = string[::-1]
-        if revers_string == string:
+        if revers_string(string) == string:
             print "sring is poindrome"
         else:
             print "string NOT a polindrome"
-
-polindrome()
+            
+if __name__ == '__main__':
+    polindrome()

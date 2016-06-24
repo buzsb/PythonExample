@@ -1,23 +1,19 @@
 #Program make two random lists and serch common elements
 import random
 
-def common_elements_finding(a, b):
-    c = []
-    for i in a:
-        if type(i) == str:
-            continue
-        if i in b:
-            c.append(i)
+def common_elements_finding(first_list, second_list):
+    c = [i for i in first_list if i in second_list]
     return c
 
 def common_elements_in_lists():
-    a, b  = [], []
-    while len(a) < 10 and len(b) < 11:
-        a.append(random.randint(1, 10))
-        b.append(random.randint(1, 10))
-    print a,b
+    first_list, second_list  = [], []
+    
+    while len(first_list) < 10 and len(second_list) < 11:
+        first_list.append(random.randint(1, 10))
+        second_list.append(random.randint(1, 10))
+    print first_list,second_list
 
-    common_array = common_elements_finding(a, b)
+    common_array = common_elements_finding(first_list, second_list)
 
     return common_array
 

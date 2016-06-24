@@ -9,12 +9,13 @@ class HundredYearsTest(unittest.TestCase):
     def test_over_hundred(self):
         self.assertFalse(calculate_years(100))
         self.assertFalse(calculate_years(200))
-        self.assertFalse(calculate_years(300))
         
     def test_less_zero(self):
         self.assertFalse(calculate_years(-1))
         self.assertFalse(calculate_years(-10))
-        self.assertFalse(calculate_years(-100))
+
+    def test_string_argument(self):
+        self.assertFalse(calculate_years('long, big, hard string'))
 
 if __name__ == '__main__':
     unittest.main()

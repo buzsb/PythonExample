@@ -9,12 +9,10 @@ class FibonacciTest(unittest.TestCase):
     def test_negative(self):
         with self.assertRaises(ValueError):
             fib(-2)
-            fib(-10)
 
     def test_string_argument(self):
         with self.assertRaises(ValueError):
             fib('string')
-            fib('no more')
             
 
 class RecursiveFibonacciTest(unittest.TestCase):

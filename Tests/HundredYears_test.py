@@ -17,5 +17,8 @@ class HundredYearsTest(unittest.TestCase):
     def test_string_argument(self):
         self.assertFalse(calculate_years('long, big, hard string'))
 
+    def test_empty_argument(self):
+        self.assertFalse(calculate_years(''))
+
 if __name__ == '__main__':
     unittest.main()

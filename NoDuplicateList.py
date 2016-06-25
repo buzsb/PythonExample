@@ -1,12 +1,10 @@
 #Function that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates
-a = [1, 1, 3, 6, 4, 7, 3, 9, 4]
+a = [1, 2, 2, [1,2], [1,2]]
 def list_remuve_duplicates(array):
     nd_list = []
-    if type(array) == int:
-        raise TypeError
     for i in array:
         if i in nd_list:
-            pass
+            continue
         else:
             nd_list.append(i)
 

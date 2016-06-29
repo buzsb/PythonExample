@@ -1,7 +1,9 @@
 import unittest
 from Fibonacci import fib, rfib
 
+
 class FibonacciTest(unittest.TestCase):
+
     def test_equality(self):
         self.assertEqual(fib(6), 8)
         self.assertEqual(fib(17), 1597)
@@ -13,9 +15,10 @@ class FibonacciTest(unittest.TestCase):
     def test_string_argument(self):
         with self.assertRaises(ValueError):
             fib('string')
-            
+
 
 class RecursiveFibonacciTest(unittest.TestCase):
+
     def test_equality(self):
         self.assertEqual(rfib(6), 8)
         self.assertEqual(rfib(17), 1597)

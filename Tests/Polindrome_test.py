@@ -1,7 +1,9 @@
 import unittest
 from Polindrome import reversing_string
 
+
 class PolindromeTest(unittest.TestCase):
+
     def test_corect_work(self):
         self.assertEqual(reversing_string('abc'), 'cba')
 

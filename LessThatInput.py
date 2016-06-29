@@ -1,6 +1,7 @@
-#Program show what elements in array less that input number
+# Program show what elements in array less that input number
 
-a = [1, 1, 2, 3, [5, 6],5, 8, 'ss', 21, 34, 55, 89]
+a = [1, 1, 2, 3, [5, 6], 5, 8, 'ss', 21, 34, 55, 89]
+
 
 def less_than_input(list_a, number):
     new_list = []
@@ -15,4 +16,3 @@ def less_than_input(list_a, number):
 
 if __name__ == '__main__':
     print less_than_input(a, 35)
-

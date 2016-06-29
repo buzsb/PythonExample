@@ -1,6 +1,7 @@
 import unittest
 from HundredYears import say_when, calculate_years
 
+
 class HundredYearsTest(unittest.TestCase):
 
     def test_equality(self):
@@ -9,7 +10,7 @@ class HundredYearsTest(unittest.TestCase):
     def test_over_hundred(self):
         self.assertFalse(calculate_years(100))
         self.assertFalse(calculate_years(200))
-        
+
     def test_less_zero(self):
         self.assertFalse(calculate_years(-1))
         self.assertFalse(calculate_years(-10))

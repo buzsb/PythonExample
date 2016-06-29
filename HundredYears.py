@@ -1,13 +1,15 @@
-#Simple program that ask you age and show year that you will turn 100 years old
+# Simple program that ask you age and show year that you will turn 100
+# years old
 
 from datetime import date
+
 
 def calculate_years(age):
     if not isinstance(age, int):
         return False
-    if age <= 0 or  age >= 100:
+    if age <= 0 or age >= 100:
         return False
-        
+
     now = date.today().year
     calculate = (now - age) + 100
 

@@ -1,5 +1,8 @@
-#Function that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates
-a = [1, 2, 2, [1,2], [1,2]]
+# Function that takes a list and returns a new list that contains all the
+# elements of the first list minus all the duplicates
+a = [1, 2, 2, [1, 2], [1, 2]]
+
+
 def list_remuve_duplicates(array):
     nd_list = []
     for i in array:
